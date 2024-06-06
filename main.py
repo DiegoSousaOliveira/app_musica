@@ -32,16 +32,16 @@ class AudiDirectory(object):
 
     playlist: list = [
         Song(
-            song_name="nome_da_musica1",
-            artist_name="nome_do_artista",
-            audio_path="nome_do_arquivo_de_audio.mp3",
-            img_path="noma_da_imagem.(png, jpg, etc.)"
+            song_name="Genres Hiphop",
+            artist_name="Desconhecido",
+            audio_path="Genres Hiphop.mp3",
+            img_path="img.jpg"
         ),
         Song(
-            song_name="nome_da_musica2",
-            artist_name="nome_do_artista",
-            audio_path="nome_do_arquivo_de_audio.mp3",
-            img_path="noma_da_imagem.(png, jpg, etc.)"
+            song_name="Genres EDM",
+            artist_name="Desconhecido",
+            audio_path="Genres EDM.mp3",
+            img_path="img.jpg"
         )
     ]
 
@@ -236,7 +236,7 @@ class CurrentSong(ft.View):
         self.__update_start_end()
 
         pos_change = 0
-        if self.start > 0: 
+        if self.start > 0:
             if delta == 5000:
                 pos_change = 5000
             elif delta == -5000:
